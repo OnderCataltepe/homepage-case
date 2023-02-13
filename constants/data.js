@@ -23,7 +23,7 @@ import bannerImg from "../public/banner/banner1.png";
 // Product Images
 import nutVertical from "../public/icon/nutVertical.png";
 import almond from "../public/products/almondSpread.png";
-import birthdaycake from "../public/products/birthdaycakeSpread.png";
+import birthdayCake from "../public/products/birthdaycakeSpread.png";
 import cardamon from "../public/products/cardamonSpread.png";
 import hazelnut from "../public/products/hazelnutSpread.png";
 
@@ -62,7 +62,7 @@ export const PRODUCTS = {
       id: 3,
       name: "Birthdaycake Spread",
       points: 3.6,
-      image: birthdaycake,
+      image: birthdayCake,
       path: "/",
     },
     { id: 4, name: "Hazelnut Spread", points: 4.5, image: hazelnut, path: "/" },
