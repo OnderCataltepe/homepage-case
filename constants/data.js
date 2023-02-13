@@ -23,7 +23,7 @@ import bannerImg from "../public/banner/banner1.png";
 // Product Images
 import nutVertical from "../public/icon/nutVertical.png";
 import almond from "../public/products/almondSpread.png";
-import birthdayCake from "../public/products/birthdayCakeSpread.png";
+import birthdayCake from "../public/products/birthdaycakeSpread.png";
 import cardamon from "../public/products/cardamonSpread.png";
 import hazelnut from "../public/products/hazelnutSpread.png";
 
