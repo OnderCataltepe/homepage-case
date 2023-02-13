@@ -1,0 +1,66 @@
+@import "../../../../styles/mixin";
+
+.container {
+  width: 49%;
+  .imageContainer {
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .playButton {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid white;
+      border-radius: 50%;
+      width: 30%;
+      aspect-ratio: 1/1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba($color: #000000, $alpha: 0.1);
+      font-size: 4rem;
+      line-height: 4rem;
+      color: white;
+      cursor: pointer;
+    }
+    .playButton:hover {
+      background-color: rgba($color: #000000, $alpha: 0.3);
+    }
+  }
+  a {
+    color: var(--red-text-color);
+    font-size: 2rem;
+    line-height: 2.7rem;
+    font-weight: bold;
+    margin: 1rem 0rem;
+    display: block;
+  }
+  p {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: var(--gray-textSecondary-color);
+  }
+}
+
+@include mobile() {
+  .container {
+    .imageContainer {
+      .playButton {
+        font-size: 2rem;
+      }
+    }
+    a {
+      margin: 0.5rem 0rem;
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+    }
+  }
+}

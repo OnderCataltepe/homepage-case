@@ -1,0 +1,42 @@
+@import "../../styles/mixin";
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  z-index: 10;
+  justify-content: space-between;
+  > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 4.2rem;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem;
+    img {
+      height: 5.4rem;
+      width: auto;
+    }
+  }
+}
+@include mobile() {
+  .container {
+    > div {
+      padding: 0rem 2rem;
+    }
+    .logo {
+      img {
+        height: 2rem;
+        width: auto;
+      }
+    }
+  }
+}

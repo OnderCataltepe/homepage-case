@@ -1,0 +1,59 @@
+@import "../../../styles//mixin";
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 11.5rem;
+  > div {
+    width: 50%;
+    text-align: center;
+    > img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  > div:has(p) {
+    h6 {
+      max-width: 70%;
+      font-size: 2.5vw;
+      line-height: 3vvw;
+      font-weight: bold;
+      margin: 2rem auto;
+    }
+    p {
+      max-width: 70%;
+      margin: 1rem auto;
+      max-width: 70%;
+      font-size: 1.5vw;
+      line-height: 2.4rem;
+    }
+  }
+}
+
+@include mobile() {
+  .container {
+    padding: 5rem;
+
+    > div {
+      width: 100%;
+    }
+    > div:has(p) {
+      padding: 0rem;
+
+      h6,
+      p {
+        max-width: 80%;
+      }
+      h6 {
+        font-size: 2rem;
+        line-height: 2.4rem;
+      }
+      p {
+        font-size: 1.6rem;
+        line-height: 2rem;
+      }
+    }
+  }
+}

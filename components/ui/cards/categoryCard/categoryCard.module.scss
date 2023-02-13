@@ -1,0 +1,53 @@
+@import "../../../../styles/mixin";
+
+.container {
+  width: 33%;
+  position: relative;
+
+  .imageContainer {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  > p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
+    line-height: 3vw;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 90%;
+  }
+  a {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.275vw;
+    color: white;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+@include mobile() {
+  .container {
+    width: 100%;
+
+    > p {
+      font-size: 10vw;
+      line-height: 10vw;
+    }
+    > a {
+      top: 80%;
+      font-size: 4.25vw;
+    }
+  }
+}

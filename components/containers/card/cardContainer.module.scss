@@ -1,0 +1,16 @@
+@import "../../../styles/mixin";
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 4rem 0rem;
+  flex-wrap: wrap;
+}
+
+@include mobile() {
+  .container {
+    justify-content: space-around;
+  }
+}

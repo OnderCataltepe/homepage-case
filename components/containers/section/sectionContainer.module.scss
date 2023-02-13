@@ -1,0 +1,60 @@
+@import "../../../styles/mixin";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 12rem;
+  > img {
+    height: 4.7rem;
+    width: auto;
+    font-weight: bold;
+  }
+  > h3 {
+    font-size: 5rem;
+    text-align: center;
+  }
+  > h4 {
+    font-size: 4rem;
+    color: var(--red-text-color);
+    margin: 1rem 0rem;
+  }
+  > p {
+    font-size: 2rem;
+    line-height: 2.7rem;
+    color: var(--gray-text-color);
+    width: 60%;
+    font-weight: 400;
+    text-align: center;
+  }
+  > hr {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 5%;
+    background-color: var(--red-text-color);
+    height: 3px;
+    margin-top: 2rem;
+  }
+  > button {
+    margin: 3rem 0rem;
+  }
+}
+
+@include mobile() {
+  .container {
+    padding: 3rem 5rem;
+    > h3 {
+      font-size: 4rem;
+    }
+    > h4 {
+      font-size: 3rem;
+    }
+    > p {
+      width: 80%;
+    }
+    > hr {
+      width: 15%;
+    }
+  }
+}

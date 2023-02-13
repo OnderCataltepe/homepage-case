@@ -1,0 +1,53 @@
+@import "../../../../styles/mixin";
+
+.container {
+  position: relative;
+  width: 100%;
+  > img {
+    width: 100%;
+    height: auto;
+  }
+  > .info {
+    position: absolute;
+    top: 40%;
+    padding-left: 9vw;
+    width: 50%;
+    h6 {
+      font-size: 3vw;
+      line-height: 3vw;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+    p {
+      width: 80%;
+      font-size: 2vw;
+      line-height: 2.5vw;
+      font-weight: bold;
+    }
+    > button {
+      margin: 4rem 0rem;
+    }
+  }
+}
+
+@include mobile() {
+  .container {
+    padding-top: 1rem;
+    > .info {
+      padding-left: 8vw;
+      h6 {
+        font-size: 4vw;
+        line-height: 3vw;
+      }
+      p {
+        width: 80%;
+        font-size: 3vw;
+        line-height: 4vw;
+      }
+      > button {
+        margin: 0.5rem;
+        padding: 0.4rem 1rem;
+      }
+    }
+  }
+}

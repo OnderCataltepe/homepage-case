@@ -1,0 +1,131 @@
+@import "../../styles/mixin";
+
+.container {
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0rem 3.2rem;
+
+  .footerNav {
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 0rem;
+
+    > div {
+      width: 20%;
+
+      h6 {
+        font-size: 1.8rem;
+        margin-bottom: 1.8rem;
+      }
+      p,
+      li {
+        font-size: 1rem;
+        color: var(--gray-subTextSecondary-color);
+      }
+      li {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        .icon {
+          font-size: 1.4rem;
+        }
+        a,
+        span {
+          margin-left: 1rem;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .creditCards > img {
+      margin-top: 1.5rem;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 0rem;
+    border-top: 1px solid #e3e3e3;
+
+    .copyRight {
+      display: flex;
+      align-items: center;
+      color: var(--gray-subTextSecondary-color);
+      font-size: 1.1rem;
+
+      > div {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-right: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0.1rem solid var(--gray-subTextSecondary-color);
+        border-radius: 50%;
+      }
+    }
+    .icons {
+      display: flex;
+      align-items: flex-end;
+      color: var(--gray-subText-color);
+
+      p {
+        font-weight: bold;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+      }
+      a {
+        font-size: 1rem;
+        margin-left: 1.5rem;
+      }
+    }
+  }
+}
+
+@include mobile() {
+  .container {
+    .footerNav {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 3rem 0rem;
+
+      > div {
+        margin-bottom: 1.5rem;
+        width: 45%;
+      }
+    }
+    .bottom {
+      padding: 0.4rem 0rem;
+
+      .copyRight {
+        max-width: 70%;
+        font-size: 0.8rem;
+
+        > div {
+          width: 3rem;
+          height: 3rem;
+          margin-right: 1rem;
+        }
+      }
+      .icons {
+        align-items: center;
+
+        p {
+          font-weight: bold;
+          font-size: 0.8rem;
+          letter-spacing: 0.5px;
+        }
+        a {
+          font-size: 0.8rem;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}

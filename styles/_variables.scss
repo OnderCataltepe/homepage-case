@@ -1,0 +1,26 @@
+$white: #f7f7f7;
+$grayText: #757575;
+$grayTextSecondary: #4a4a4a;
+$subGraySecondary: #b1b1ae;
+$subGray: #5c6a4f;
+$redText: #cb0b10;
+$redTextSecondary: #d10a11;
+$lightGreen: #bedbbb;
+$greenText: #3b5f2c;
+$brownText: #ae611c;
+
+:root {
+  //color text
+  --gray-text-color: #{$grayText};
+  --gray-textSecondary-color: #{$grayTextSecondary};
+  --gray-subText-color: #{$subGray};
+  --gray-subTextSecondary-color: #{$subGraySecondary};
+  --red-text-color: #{$redText};
+  --red-textSecondary-color: #{$redTextSecondary};
+  --green-text-color: #{$greenText};
+  --brown-text-color: #{$brownText};
+
+  //background color
+  --green-background-color: #{$lightGreen};
+  --white-background-color: #{$white};
+}

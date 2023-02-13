@@ -1,0 +1,72 @@
+@import "../../../styles/mixin";
+
+.outlined {
+  padding: 1.2rem 5rem;
+  font-size: 1.9rem;
+  font-weight: 800;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  border: 0.1rem solid;
+}
+.outlined:hover {
+  transform: scale(1.04);
+  transition: 0.2s all ease-in-out;
+}
+.hamburgerContainer {
+  max-width: 800px;
+  margin: 0 auto;
+
+  > div {
+    display: block;
+    text-transform: uppercase;
+    color: #000;
+    padding: 10px 10px;
+  }
+  .dropdown {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hamburger {
+    align-self: flex-end;
+  }
+  label {
+    cursor: pointer;
+  }
+  input[type="checkbox"] + label {
+    .iconBar {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background-color: #cccccc;
+      margin: 4px;
+      transition: all 0.2s;
+    }
+    .toBar {
+      transform: rotate(0);
+    }
+    .middleBar {
+      opacity: 1;
+    }
+  }
+  input[type="checkbox"]:checked + label {
+    .topBar {
+      transform: rotate(45deg);
+      transform-origin: 10% 10%;
+    }
+    .middleBar {
+      opacity: 0;
+    }
+    .bottomBar {
+      transform: rotate(-45deg);
+      transform-origin: 10% 90%;
+    }
+  }
+}
+
+@include mobile() {
+  .outlined {
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
+  }
+}

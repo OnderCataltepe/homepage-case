@@ -1,0 +1,56 @@
+@import "../../../../styles/mixin";
+
+.container {
+  width: 24%;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  .imageContainer {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  > div {
+    > a {
+      font-size: 1.7rem;
+      line-height: 2.7rem;
+      color: var(--gray-text-color);
+      font-weight: 900;
+      width: 100%;
+    }
+  }
+  .stars {
+    --percent: calc(var(--rating) / 5 * 100%);
+    display: inline-block;
+    font-size: 1.6rem;
+    font-family: Times;
+    line-height: 1;
+
+    &::before {
+      content: "★★★★★";
+      letter-spacing: 2px;
+      background: linear-gradient(
+        90deg,
+        var(--red-text-color) var(--percent),
+        #fff var(--percent)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-color: var(--red-text-color);
+      -webkit-text-stroke-width: 0.5px;
+    }
+  }
+}
+
+@include mobile() {
+  .container {
+    width: 45%;
+
+    > div {
+      > a {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
