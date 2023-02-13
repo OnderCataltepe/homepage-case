@@ -1,5 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
+An example of homepage(static)
 ## Getting Started
 
 First, run the development server:
@@ -10,6 +9,7 @@ npm run dev
 yarn dev
 ```
 
+![frapella](https://user-images.githubusercontent.com/110464301/218352279-2611810a-dd47-4ca2-89f0-12d42bb20620.png)
 
 
 
