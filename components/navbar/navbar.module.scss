@@ -16,6 +16,9 @@
       margin-left: 3.6rem;
       font-weight: 600;
     }
+    li:hover {
+      color: var(--brown-text-color);
+    }
   }
   > ul.mobile {
     position: absolute;

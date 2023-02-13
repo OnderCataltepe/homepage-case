@@ -8,7 +8,6 @@ export const useMediaQuery = (width) => {
       setTargetReached(true);
     } else {
       setTargetReached(false);
-      console.log("d");
     }
   }, []);
 
